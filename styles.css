@@ -1,0 +1,35 @@
+.screen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+}
+h1{
+    text-align: center;
+}
+.container_buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+    width: 400px;
+}
+
+button{
+    width: 120px;
+    height: 50px;
+    background: linear-gradient(to right bottom, rgb(187, 40, 187) 20%, rgb(116, 5, 116) 100%);
+    border:1px solid rgb(15, 17, 151);
+    color:white;
+    text-transform: capitalize;
+    border-radius: 50px;
+    transform: scale(0.9);
+    transition: ease linear;
+    transition: 200ms;
+    
+}
+
+button:hover{
+    transform: scale(1);
+    cursor: pointer;
+}
