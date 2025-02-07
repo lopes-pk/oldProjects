@@ -1,0 +1,113 @@
+:root{
+    font-size: 62.5%;
+    --background-color: #f1f1f1;
+    --primary-color: #111;
+}
+.dark-mode:root{
+    --background-color:#111;
+    --primary-color: #f1f1f1;
+}
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    padding: 0 6rem ;
+    background-color: var(--background-color);
+    transition: 800ms;
+}
+
+header{
+    width: 100%;
+    height: 16%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+header h1{
+    padding-top:.4rem ;
+}
+
+.nav-header{
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+.nav-header p{
+    font-size: 18px;
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: 200ms ease-in;
+}
+
+.nav-header p:hover{  
+    transform: scale(1);
+}
+
+.nav-header span{
+    cursor: pointer;
+    transform: scale(1.6);
+    margin-left: 4rem;
+}
+
+.hide{
+    display: none;
+}
+
+main{
+    height: 80vh;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.text-content{
+    margin-top: 10.5rem;
+    height: 86%;
+    padding-right: 6rem;
+    color: var(--primary-color);
+}
+
+.text-content h2{
+    font-weight: bold;
+    font-size: 4rem;
+    margin-bottom: 1.4rem;
+}
+
+.text-content p{
+    font-size: 1.8rem;
+}
+
+.text-content svg{
+    fill: var(--primary-color);
+    margin-top: 4rem;
+    transform: rotate(134.5deg);
+    cursor: pointer;
+}
+
+.social-network-content li svg path{
+    fill: var(--primary-color);
+}
+
+.social-network-content {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+.social-network-content ul{
+    display: flex;
+    gap: 4rem;
+}
+
+.social-network-content ul li{
+    list-style: none;
+    cursor: pointer;
+}
